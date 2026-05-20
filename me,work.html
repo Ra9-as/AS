@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+<meta name="description" content="وكالة دعايه و اعلان ' للعقرب للدعايه و الاعلان">
+<meta name="keywords" content="العقرب للدعايه و الاعلان ' وكالة AS العقرب لل دعايه و الاعلان ' 01117601527">
+<meta name="author" content="AS.cc">
+<meta name="viewport" content="widzh=device-width'initil-scale=1.0">
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+
+</style>
+<link rel="style sheet" href="">
+<style>
+
+#preview{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+}
+
+#preview img{
+max-width:90%;
+}
+
+/* ===== خلفية احترافية للدعاية والإعلان ===== */
+
+body{
+margin:0;
+font-family:"Cairo", Tahoma, Arial;
+background: linear-gradient(135deg,#0d0d0d,#1a1a1a,#111);
+color:#fff;
+text-align:center;
+}
+
+/* ===== عنوان الصفحة ===== */
+h1{
+margin-top:60px;
+font-size:42px;
+letter-spacing:2px;
+}
+
+/* ===== تأثير AS الناري ===== */
+.as-fire{
+background: linear-gradient(45deg,#ffd700,#ff9900,#ff3300,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 10px #ff9900,
+0 0 20px #ff5500,
+0 0 40px #ff2200;
+
+animation:
+fireGlow 1.5s infinite alternate,
+startZoom 1.2s ease-out;
+}
+
+@keyframes fireGlow{
+from{ text-shadow:0 0 10px #ff9900; }
+to{ text-shadow:0 0 30px #ff3300,0 0 60px #ff0000; }
+}
+
+@keyframes startZoom{
+from{opacity:0; transform:scale(.5);}
+to{opacity:1; transform:scale(1);}
+}
+
+/* ===== شبكة المعرض ===== */
+.gallery{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+/* ===== الصور والفيديو ===== */
+.gallery img,
+.gallery video{
+width:100%;
+border-radius:14px;
+background:#000;
+box-shadow:0 0 15px rgba(255,140,0,.4);
+transition:.3s;
+}
+
+.gallery img:hover,
+.gallery video:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #ff8800;
+}
+
+</style>
+<script>
+document.querySelectorAll(".gallery img").forEach(img=>{
+img.onclick=function(){
+document.getElementById("preview").style.display="flex";
+document.getElementById("previewImg").src=this.src;
+}
+})
+</script> 
+<title>معرض اعملانا</title>
+</head>
+<body>
+
+<div id="preview">
+<img id="previewImg">
+</div> 
+
+<h1 dir="rtl">
+معرض أعمال <span class="as-fire">AS</span>
+</h1>
+<div class="gallery">
+
+<video controls src="actionha.mp4"></video>
+<video controls src="mshwor.mp4"></video>
+<video controls src="tchekmet.mp4"></video>
+<img src="اللوجو الجديد.jpg" alt="شغلي">
+<img src="منيو كليوباترا.jpg" alt="شغلي">
+<img src="Untitled-1.jpg" alt="شغلي">
+<img src="mug.jpg" alt="شغلي">
+<img src="pop.jpg" alt="شغلي">
+<img src="logo resturant.jpg" alt="شغلي">
+<img src="el nade.jpg" alt="شغلي">
+<img src="shaban prshor prent.jpg" alt="شغلي">
+
+</div>
+</body>
+</html>

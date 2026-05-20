@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="وكالة العقرب للدعاية والإعلان" />
+<meta name="keywords" content="العقرب للدعاية والإعلان, وكالة AS, تصميم, طباعة, تسويق" />
+<meta name="author" content="AS.cc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>العقرب للدعاية والإعلان</title>
+<link rel="icon" type="image/png" href="logo.png" />
+
+<style>
+body {
+margin: 0;
+font-family: Cairo, Tahoma, Arial, sans-serif;
+background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #111);
+color: #fff;
+overflow-x: hidden;
+}
+
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+padding: 15px;
+text-align: center;
+z-index: 1000;
+}
+
+.navbar a {
+display: inline-block;
+color: #fff;
+margin: 0 10px;
+text-decoration: none;
+font-weight: bold;
+background: none;
+padding: 0;
+}
+
+#loader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+transition: opacity 0.5s;
+}
+
+#headtext {
+font-size: 48px;
+margin-top: 120px;
+text-align: center;
+font-weight: 900;
+}
+
+.as-fire {
+background: linear-gradient(45deg, #ffcc00, #ff8800, #ff3300, #ffd700);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 10px #ff9900, 0 0 20px #ff6600;
+animation: fireGlow 1.5s infinite alternate;
+}
+
+@keyframes fireGlow {
+from { text-shadow: 0 0 8px #ffae00, 0 0 15px #ff6a00; }
+to { text-shadow: 0 0 20px #ffd000, 0 0 40px #ff3300; }
+}
+
+.logo-wrap {
+text-align: center;
+margin-top: 20px;
+}
+
+.logo-wrap img {
+width: 220px;
+max-width: 80%;
+filter: drop-shadow(0 0 20px #ff8800);
+}
+
+.subtitle {
+text-align: center;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.content {
+max-width: 900px;
+margin: auto;
+padding: 20px;
+line-height: 2;
+font-size: 18px;
+color: #ddd;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+setTimeout(function () {
+const loader = document.getElementById("loader");
+loader.style.opacity = "0";
+setTimeout(() => {
+  loader.style.display = "none";
+}, 500);
+}, 1500);
+});
+</script>
+</head>
+<body>
+<nav class="navbar">
+<a href="links,me.html">التواصل</a>
+<a href="me,work.html">الأعمال</a>
+<a href="new,wep.html">الرئيسية</a>
+</nav>
+
+<div id="loader">
+<h1 class="as-fire">AS</h1>
+</div>
+
+<h1 id="headtext">وكالة <span class="as-fire">AS</span> العقرب</h1>
+<div class="subtitle">للدعاية والإعلان</div>
+
+<div class="logo-wrap">
+<img src="logo.png" alt="شعار وكالة AS" />
+</div>
+
+<div class="content">
+<b>
+معلومات عن وكالة AS:<br />
+هي وكالة إعلانية متخصصة في مجال الدعاية والإعلان، مملوكة لمكتب العقرب للدعاية والإعلان.
+تقدم خدمات الطباعة، الـ ID Card، اللوحات، اليفط المضيئة، الأكريلك، البنر، الفلكس، الفينيل، السي ثرو،
+التصميمات المختلفة، التصوير، المونتاج، التسويق الإلكتروني، وبرمجة المواقع والتطبيقات.
+</b>
+</div>
+</body>
+</html>
