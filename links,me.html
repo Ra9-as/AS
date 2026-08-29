@@ -6,11 +6,13 @@
 <meta name="description" content="وكالة دعايه و اعلان ' للعقرب للدعايه و الاعلان">
 <meta name="keywords" content="العقرب للدعايه و الاعلان ' وكالة AS العقرب لل دعايه و الاعلان ' 01117601527">
 <meta name="author" content="AS.cc">
-<meta name="viewport" content="widzh=device-width'initil-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="logo.png" />
 <style>
 
 /* ===== خلفية احترافية ===== */
+*{box-sizing:border-box;}
+
 body{
 margin:0;
 font-family:"Cairo",Tahoma,Arial;
@@ -22,7 +24,7 @@ text-align:center;
 /* ===== العنوان ===== */
 h1{
 margin:60px 0 40px;
-font-size:42px;
+font-size:clamp(30px,6vw,42px);
 }
 
 /* ===== تأثير AS الناري ===== */
@@ -54,7 +56,9 @@ to{opacity:1; transform:scale(1);}
 display:grid;
 grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
-padding:40px;
+width:min(1100px,calc(100% - 32px));
+margin:0 auto;
+padding:20px 0 40px;
 }
 
 /* ===== كارت التواصل ===== */
@@ -94,17 +98,21 @@ margin-bottom:10px;
 filter: drop-shadow(0 0 10px #ff8800);
 }
 
+ .home-btn{display:inline-block;margin:8px auto 10px;padding:11px 22px;border-radius:10px;background:linear-gradient(45deg,#ffb300,#ff5500);color:#fff;text-decoration:none;font-weight:bold;}
+@media(max-width:600px){.links-box{width:calc(100% - 24px);grid-template-columns:1fr;padding:15px 0 30px;gap:15px;}}
 </style>
 <link rel="style sheet" href="">
 <script>
 
 </script>
-<title>links me</title>
+<title>me link</title>
 </head>
 <body>
 <h1 dir="rtl">
 تواصل مع <span class="as-fire">AS</span>
 </h1>
+
+<a class="home-btn" href="new,wep.html">⌂ الصفحة الرئيسية</a>
 
 <div class="links-box">
 
