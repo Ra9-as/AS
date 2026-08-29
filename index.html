@@ -10,6 +10,8 @@
 <link rel="icon" type="image/png" href="logo.png" />
 
 <style>
+* { box-sizing: border-box; }
+
 body {
 margin: 0;
 font-family: Cairo, Tahoma, Arial, sans-serif;
@@ -53,8 +55,11 @@ transition: opacity 0.5s;
 }
 
 #headtext {
-font-size: 48px;
+font-size: clamp(30px, 6vw, 48px);
 margin-top: 120px;
+margin-left: 16px;
+margin-right: 16px;
+line-height: 1.35;
 text-align: center;
 font-weight: 900;
 }
@@ -90,6 +95,7 @@ margin-bottom: 20px;
 }
 
 .content {
+width: min(900px, calc(100% - 32px));
 max-width: 900px;
 margin: auto;
 padding: 20px;
@@ -97,6 +103,7 @@ line-height: 2;
 font-size: 18px;
 color: #ddd;
 }
+@media (max-width:600px){ .navbar{padding:10px;} .navbar a{margin:2px 4px;padding:8px 10px;font-size:14px;} .content{font-size:16px;} }
 </style>
 
 <script>
@@ -115,7 +122,7 @@ setTimeout(() => {
 <nav class="navbar">
 <a href="links,me.html">التواصل</a>
 <a href="me,work.html">الأعمال</a>
-<a href="new,wep.html">الرئيسية</a>
+<a href="#">الرئيسية</a>
 </nav>
 
 <div id="loader">
